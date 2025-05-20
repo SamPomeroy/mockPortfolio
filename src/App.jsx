@@ -8,16 +8,19 @@ import Contact from './pages/Contact.jsx'
 
 function App() {
   return (
-<div className="min-h-screen bg-[#1F2B24] text-[#F0EDE3] px-4 sm:px-6 md:px-12 lg:px-20">
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+    <div className="flex justify-center items-center min-h-screen w-full bg-[#1F2B24] text-[#F0EDE3]">
+      <div className="max-w-4xl w-full text-center px-6 sm:px-12 md:px-20 lg:px-32">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
     </div>
-  )
+  );
 }
-export default App
+
+export default App;
