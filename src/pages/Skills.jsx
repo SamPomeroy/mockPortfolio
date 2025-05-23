@@ -1,10 +1,9 @@
-import React from "react";
 import { skills } from "../data/skills";
 
 function Skills() {
   return (
-    <section className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] px-6 text-center">
-      <h1 className="text-4xl sm:text-5xl font-bold text-[#E3FDFD] mb-8">
+    <section className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] px-6 py-12 text-center">
+      <h1 className="text-4xl sm:text-5xl font-bold text-[#E3FDFD] mb-10">
         Skills
       </h1>
       <div className="w-full max-w-4xl text-left">

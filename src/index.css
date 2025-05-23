@@ -4,19 +4,11 @@
 
 
 
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+#root {
+  max-width: 960px;        /* or 1280px, depending on your preference */
+  margin: 0 auto;          /* centers everything inside horizontally */
+  padding: 2rem 1rem;      /* space inside */
+  text-align: center;
 }
 
 a {
@@ -29,12 +21,13 @@ a:hover {
 }
 
 body {
+  @apply bg-[#e1e1e] text-[#d4d4d4] font-mono;
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
   font-family: 'Fira Code', 'Fira Mono', 'Fira Sans', 'Roboto Mono', 'Courier New', monospace;
+  display: block; /* ← changed from flex */
+  place-items: unset; /* ← removed centering */
 }
 h1 {
   font-size: 3.2em;

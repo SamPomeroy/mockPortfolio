@@ -1,18 +1,10 @@
-import React from 'react';
-
-function About() {
+export default function About() {
   return (
-    <section className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] text-center px-6">
-      <h1 className="text-4xl sm:text-5xl font-bold text-[#E3FDFD] mb-6">
-        About Me
-      </h1>
-      <p className="text-[#F0EDE3] max-w-2xl leading-relaxed">
-        I’m a full stack web developer with a background in office management, outreach, and a
-        drive to build meaningful tools that support second chances. This is my space to share my
-        work, story, and the skills I’m growing.
+    <div className="flex flex-col items-center justify-center min-h-screen text-center">
+      <h2 className="text-4xl font-semibold mb-4">About Me</h2>
+      <p className="text-lg max-w-2xl">
+        I’m a full stack developer with a background in customer service, resilience, and tech for good. I'm rebuilding my life and career with purpose and intention.
       </p>
-    </section>
+    </div>
   );
 }
-
-export default About;

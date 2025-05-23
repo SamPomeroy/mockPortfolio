@@ -2,25 +2,25 @@ import React from 'react'
 
 function ProjectCard({ title, description, image, link }) {
   return (
-    <div className="bg-[#2C3A33] rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col">
+    <div className="bg-[#1E1E1E] border border-[#333] rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden flex flex-col">
       {image && (
         <img
           src={image}
           alt={`${title} screenshot`}
-          className="w-full h-48 object-cover"
+          className="w-full h-40 object-cover"
         />
       )}
-      <div className="p-6 flex flex-col flex-grow">
-        <h3 className="text-2xl font-bold mb-2 text-[#E3FDFD]">{title}</h3>
-        <p className="text-[#F0EDE3] mb-4 flex-grow">{description}</p>
+      <div className="p-4 flex flex-col flex-grow">
+        <h3 className="text-xl font-bold text-lime-400 mb-2 font-mono">{title}</h3>
+        <p className="text-[#d4d4d4] text-sm mb-4 flex-grow font-mono">{description}</p>
         {link && (
           <a
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-auto inline-block text-lime-400 hover:text-lime-300 font-semibold transition duration-200"
+            className="mt-auto text-sm text-lime-400 hover:text-lime-300 font-mono underline decoration-dotted underline-offset-4 transition duration-200"
           >
-            View Project →
+            ↳ View on GitHub
           </a>
         )}
       </div>
